@@ -1,0 +1,38 @@
+#include "WPILib.h"
+
+/**
+ * Encoder Test Using Motor
+ */
+class Robot : public SampleRobot {
+	Joystick m_stick;
+	Talon m_motor;
+	Encoder m_encoder;
+
+	// update every 0.005 seconds/5 milliseconds.
+	double kUpdatePeriod = 0.005;
+
+public:
+	Robot() :
+			m_encoder(1, 2, false, Encoder::k4X),
+			m_stick(0), // Initialize Joystick on port 0.
+			m_motor(0) // Initialize the Talon on channel 0.
+	{
+		m_encoder.SetSamplesToAverage(5);
+		m_encoder.SetDistancePerPulse(1.0 / 360.0 * 2.0 * 3.1415 * 1.5);
+		m_encoder.SetMinRate(1.0);
+	}
+	void OperatorControl()
+	{
+		while (IsOperatorControl() && IsEnabled())
+		{
+			m_motor.Set(m_stick.GetY()); //gets the y-axis on the LEFT joystick
+
+			SmartDashboard::PutNumber("Encoder Distance", m_encoder.GetDistance());
+			SmartDashboard::PutNumber("Encoder Rate", m_encoder.GetRate());
+
+			Wait(kUpdatePeriod); // Wait 5ms for the next update.
+		}
+	}
+};
+
+START_ROBOT_CLASS(Robot);

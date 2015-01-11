@@ -1,0 +1,352 @@
+20:03:07 **** Clean-only build of configuration Debug for project Motor Control With Encoder ****
+rm -rf src/Robot.d src/Robot.o FRCUserProgram 
+Cannot run program "rm": Launching failed
+
+Error: Program "rm" not found in PATH
+PATH=[C:\Program Files\eclipse;C:/Program Files/Java/jre1.8.0_25/bin/client;C:/Program Files/Java/jre1.8.0_25/bin;C:/Program Files/Java/jre1.8.0_25/lib/i386;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Program Files\ThinkPad\Bluetooth Software\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;c:\Program Files\Common Files\Lenovo;C:\Program Files\Common Files\Roxio Shared\10.0\DLLShared\;C:\Program Files\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\TortoiseSVN\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Git\cmd;C:\Program Files\OpenNI\Bin;C:\frc\bin]
+
+20:03:07 **** Clean-only build of configuration Debug for project Motor Control With Encoder ****
+20:03:08 **** Rebuild of configuration Debug for project Motor Control With Encoder ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Control With Encoder\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+20:04:56 **** Rebuild of configuration Debug for project Sean_Encoder Test ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Sean_Encoder Test\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+20:05:40 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+20:10:09 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In constructor 'Robot::Robot()':
+..\src\Robot.cpp:9:10: warning: 'Robot::m_encoder' will be initialized after [-Wreorder]
+  Encoder m_encoder;
+          ^
+..\src\Robot.cpp:7:11: warning:   'Joystick Robot::m_stick' [-Wreorder]
+  Joystick m_stick;
+           ^
+..\src\Robot.cpp:15:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+20:11:00 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+20:12:02 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+18:57:01 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Encoder
+Info: Nothing to build for Motor Controller
+20:22:38 **** Rebuild of configuration Debug for project Sean_Encoder Test ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Sean_Encoder Test\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+20:22:45 **** Rebuild of configuration Debug for project SingleSolenoidTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\SingleSolenoidTest\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+15:27:48 **** Rebuild of configuration Debug for project SingleSolenoidTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\SingleSolenoidTest\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+..\src\Robot.cpp:41:12: error: 'class DoubleSolenoid' has no member named 'set'
+     piston.set(DoubleSolenoid.Value.kForward);
+            ^
+..\src\Robot.cpp:41:30: error: expected primary-expression before '.' token
+     piston.set(DoubleSolenoid.Value.kForward);
+                              ^
+..\src\Robot.cpp:45:12: error: 'class DoubleSolenoid' has no member named 'set'
+     piston.set(DoubleSolenoid.Value.Reverse);
+            ^
+..\src\Robot.cpp:45:30: error: expected primary-expression before '.' token
+     piston.set(DoubleSolenoid.Value.Reverse);
+                              ^
+..\src\Robot.cpp:49:12: error: 'class DoubleSolenoid' has no member named 'set'
+     piston.set(DoubleSolenoid.Value.kOff);
+            ^
+..\src\Robot.cpp:49:30: error: expected primary-expression before '.' token
+     piston.set(DoubleSolenoid.Value.kOff);
+                              ^
+15:28:58 **** Rebuild of configuration Debug for project Solenoids ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Solenoids\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+15:30:13 **** Incremental Build of configuration Debug for project SingleSolenoidTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\SingleSolenoidTest\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Encoder
+15:32:21 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+15:32:25 **** Rebuild of configuration Debug for project Sean_Encoder Test ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Sean_Encoder Test\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+15:32:29 **** Incremental Build of configuration Debug for project SingleSolenoidTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\SingleSolenoidTest\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+15:32:33 **** Rebuild of configuration Debug for project Solenoids ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Solenoids\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Encoder
+Info: Nothing to build for Motor Controller
+Info: Nothing to build for Sean_Encoder Test
+16:33:14 **** Incremental Build of configuration Debug for project SingleSolenoidTest ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\SingleSolenoidTest\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Solenoids
+17:09:13 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::Test()':
+..\src\Robot.cpp:39:10: error: cannot convert 'RobotBase::IsTest' from type 'bool (RobotBase::)()' to type 'bool'
+   while (IsTest)
+          ^
+17:10:51 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:107:2: error: expected ';' after class definition
+  }
+  ^
+..\src\Robot.cpp:108:1: error: expected declaration before '}' token
+ };
+ ^
+17:11:16 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+17:15:59 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+17:18:21 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Encoder
+Info: Nothing to build for Motor Controller
+Info: Nothing to build for Sean_Encoder Test
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+17:57:47 **** Rebuild of configuration Debug for project Axis Camera Sample ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Axis Camera Sample\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+18:09:34 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+..\src\Robot.cpp:66:4: error: 'Wait' is not a member of 'SmartDashboard'
+    SmartDashboard::
+    ^
+18:09:44 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+18:13:38 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:13:2: error: expected ';' before 'double'
+  double kUpdatePeriod = 0.005;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+..\src\Robot.cpp:65:69: error: no matching function for call to 'SmartDashboard::PutString(const char [12], const char [13], int&)'
+    SmartDashboard::PutString("DB/String 1", "variable: %d", myDouble);
+                                                                     ^
+..\src\Robot.cpp:65:69: note: candidate is:
+In file included from C:\Users\mhsrobotics/wpilib/cpp/current/include/Commands/Scheduler.h:16:0,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/LiveWindow/LiveWindow.h:6,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/PIDController.h:10,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/Commands/PIDSubsystem.h:11,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/WPILib.h:31,
+                 from ..\src\Robot.cpp:1:
+C:\Users\mhsrobotics/wpilib/cpp/current/include/SmartDashboard/SmartDashboard.h:35:14: note: static void SmartDashboard::PutString(std::string, std::string)
+  static void PutString(std::string keyName, std::string value);
+              ^
+C:\Users\mhsrobotics/wpilib/cpp/current/include/SmartDashboard/SmartDashboard.h:35:14: note:   candidate expects 2 arguments, 3 provided
+..\src\Robot.cpp:70:9: error: 'kUpdatePeriod' was not declared in this scope
+    Wait(kUpdatePeriod);
+         ^
+18:13:51 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp:13:2: error: expected ';' before 'double'
+  double kUpdatePeriod = 0.005;
+  ^
+..\src\Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+..\src\Robot.cpp:65:69: error: no matching function for call to 'SmartDashboard::PutString(const char [12], const char [13], double&)'
+    SmartDashboard::PutString("DB/String 1", "variable: %d", myDouble);
+                                                                     ^
+..\src\Robot.cpp:65:69: note: candidate is:
+In file included from C:\Users\mhsrobotics/wpilib/cpp/current/include/Commands/Scheduler.h:16:0,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/LiveWindow/LiveWindow.h:6,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/PIDController.h:10,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/Commands/PIDSubsystem.h:11,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/WPILib.h:31,
+                 from ..\src\Robot.cpp:1:
+C:\Users\mhsrobotics/wpilib/cpp/current/include/SmartDashboard/SmartDashboard.h:35:14: note: static void SmartDashboard::PutString(std::string, std::string)
+  static void PutString(std::string keyName, std::string value);
+              ^
+C:\Users\mhsrobotics/wpilib/cpp/current/include/SmartDashboard/SmartDashboard.h:35:14: note:   candidate expects 2 arguments, 3 provided
+..\src\Robot.cpp:70:9: error: 'kUpdatePeriod' was not declared in this scope
+    Wait(kUpdatePeriod);
+         ^
+18:13:56 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In member function 'virtual void Robot::OperatorControl()':
+..\src\Robot.cpp:65:69: error: no matching function for call to 'SmartDashboard::PutString(const char [12], const char [13], double&)'
+    SmartDashboard::PutString("DB/String 1", "variable: %d", myDouble);
+                                                                     ^
+..\src\Robot.cpp:65:69: note: candidate is:
+In file included from C:\Users\mhsrobotics/wpilib/cpp/current/include/Commands/Scheduler.h:16:0,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/LiveWindow/LiveWindow.h:6,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/PIDController.h:10,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/Commands/PIDSubsystem.h:11,
+                 from C:\Users\mhsrobotics/wpilib/cpp/current/include/WPILib.h:31,
+                 from ..\src\Robot.cpp:1:
+C:\Users\mhsrobotics/wpilib/cpp/current/include/SmartDashboard/SmartDashboard.h:35:14: note: static void SmartDashboard::PutString(std::string, std::string)
+  static void PutString(std::string keyName, std::string value);
+              ^
+C:\Users\mhsrobotics/wpilib/cpp/current/include/SmartDashboard/SmartDashboard.h:35:14: note:   candidate expects 2 arguments, 3 provided
+18:14:32 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Motor Controller
+18:28:27 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Motor Controller
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+20:17:45 **** Incremental Build of configuration Debug for project Encoder ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Encoder\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In constructor 'Robot::Robot()':
+..\src\Robot.cpp:22:11: warning: 'Robot::joystick' will be initialized after [-Wreorder]
+  Joystick joystick;
+           ^
+..\src\Robot.cpp:21:8: warning:   'Talon Robot::talon' [-Wreorder]
+  Talon talon;
+        ^
+..\src\Robot.cpp:44:2: warning:   when initialized here [-Wreorder]
+  Robot() : m_encoder(1, 2, false, Encoder::k4X), joystick(0), talon(0)
+  ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+20:18:06 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+20:21:04 **** Incremental Build of configuration Debug for project Encoder ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Encoder\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In constructor 'Robot::Robot()':
+..\src\Robot.cpp:22:11: warning: 'Robot::joystick' will be initialized after [-Wreorder]
+  Joystick joystick;
+           ^
+..\src\Robot.cpp:21:8: warning:   'Talon Robot::talon' [-Wreorder]
+  Talon talon;
+        ^
+..\src\Robot.cpp:44:2: warning:   when initialized here [-Wreorder]
+  Robot() : m_encoder(1, 2, false, Encoder::k4X), joystick(0), talon(0)
+  ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Motor Controller
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+Info: Nothing to build for Encoder
+20:22:31 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+Info: Nothing to build for Encoder
+Info: Nothing to build for Motor Controller
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+Info: Nothing to build for Encoder
+20:24:15 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+Info: Nothing to build for Encoder
+20:27:58 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+Info: Nothing to build for Encoder
+20:31:31 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+Info: Nothing to build for Encoder
+20:31:58 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids
+Info: Nothing to build for Encoder
+20:33:49 **** Incremental Build of configuration Debug for project Motor Controller ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Motor Controller\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for SingleSolenoidTest
+Info: Nothing to build for Solenoids

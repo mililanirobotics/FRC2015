@@ -1,0 +1,38 @@
+#include "WPILib.h"
+
+/**
+ * Encoder Test Using Motor
+ */
+class Robot : public SampleRobot {
+	Encoder encoder;
+	Joystick joystick;
+	Talon talon;
+
+	double kUpdatePeriod = 0.005;
+	double wheelRadius = 2.95; // Wheel radius in inches
+
+public:
+	Robot() :
+			encoder(1, 2, false, Encoder::k4X),
+			joystick(0), // Driverstation USB Channel 0 (default)
+			talon(0) // PWN Port 0
+	{
+		encoder.SetSamplesToAverage(5);
+		encoder.SetDistancePerPulse(1.0 / 360.0 * 2.0 * 3.1415 * wheelRadius);
+		encoder.SetMinRate(1.0);
+	}
+	void OperatorControl()
+	{
+		while (IsOperatorControl() && IsEnabled())
+		{
+			talon.Set(joystick.GetY()); //gets the y-axis on the LEFT joystick
+
+			SmartDashboard::PutNumber("Encoder Distance", encoder.GetDistance()); // prints displacement in inches
+			SmartDashboard::PutNumber("Encoder Rate", encoder.GetRate()); // prints encoder RPM
+
+			Wait(kUpdatePeriod);
+		}
+	}
+};
+
+START_ROBOT_CLASS(Robot);

@@ -1,0 +1,18 @@
+19:23:32 **** Rebuild of configuration Debug for project Getting Started ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\mhsrobotics/wpilib/cpp/current/include" "-IC:\\Users\\mhsrobotics\\Desktop\\robot2015\\Getting Started\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+..\src\Robot.cpp: In constructor 'Robot::Robot()':
+..\src\Robot.cpp:10:6: warning: 'Robot::autoLoopCounter' will be initialized after [-Wreorder]
+  int autoLoopCounter;
+      ^
+..\src\Robot.cpp:9:8: warning:   'Talon Robot::talon' [-Wreorder]
+  Talon talon;
+        ^
+..\src\Robot.cpp:13:2: warning:   when initialized here [-Wreorder]
+  Robot() :
+  ^
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\mhsrobotics/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Robot.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\mhsrobotics/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+
+19:23:37 Build Finished (took 5s.570ms)
+

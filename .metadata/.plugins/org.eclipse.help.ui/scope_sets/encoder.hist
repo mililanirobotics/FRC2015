@@ -1,0 +1,4 @@
+#Sat Jan 10 20:13:31 HST 2015
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression=encoder
